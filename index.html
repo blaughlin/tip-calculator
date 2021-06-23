@@ -14,14 +14,26 @@
                 <label for="tip">Tip %</label>
                 <input type="number" id="tip_value" placeholder="10" />
             </div>
+            
+            <div class="people">
+                <label class="people_label" for="people">People</label>
+                <a href="#" class = "people_minus" onClick="subtract()"><span>-</span></a>
+                <input name="people" type="text"  id="people_value" class="people_input" value="1"/>
+                <a href="#" class="people_plus" onClick="add()"><span>+</span></a>
+            </div>
+            <!-- <div class="form_control">
+                <label for="Number of people">People</label>
+                <input type="number" id="people_value" placeholder="1" />
+            </div> -->
 
-            <button id="calculate">calculate</button>
+            <button id="calculate">CALCULATE</button>
 
 
             
             <footer>
                 <div class="result">
-                    <span>Total:</span> <strong id="total">[$110]</strong>
+                    <span>Per person:</span> <strong id="per_person">$110.00</strong>
+                    <span>Total:</span> <strong id="total">$110.00</strong>
                 </div>
             </footer>
         </div>

@@ -1,5 +1,6 @@
 body {
     background-color: #9370DB;
+    background-image: url("restaurant.jpg");
     color: #fff;
     margin: 0;
     display: flex;
@@ -10,7 +11,7 @@ body {
 }
 
 .calculator_container {
-    background-color: rebeccapurple;
+    background-color: rgb(173, 52, 39,0.9);
     border-radius: 4px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     padding: 2rem 3rem;
@@ -19,6 +20,7 @@ body {
 h1 {
     margin: 0 0 1rem;
     text-align: center;
+
 }
 
 .form_control {
@@ -41,4 +43,78 @@ h1 {
 .result {
     display: flex;
     justify-content: space-between;
+}
+
+.people {
+    display: flex;
+    padding: 0;
+}
+
+.people_minus,
+.people_plus {
+    display: block;
+    width: 22px;
+    height: 19px;
+    text-decoration: none;
+    margin: 0;
+    background-color: #dee0ee;
+    text-align: center;
+    line-height: 19px;
+    color: black;
+}
+
+.people_minus:hover,
+.people_plus:hover {
+    background-color: #575b71;
+    color: #fff;
+}
+
+.people_minus {
+    border-radius: 3px 0 0 3px;
+}
+
+.people_plus {
+    border-radius: 0 3px 3px 0;
+}
+
+.people_input {
+    width: 32px;
+    height: 19px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-top: 2px solid #dee0ee;
+    border-bottom: 2px solid #dee0ee;
+    border-left: 1px solid #dee0ee;
+    border-right: 2px solid #dee0ee;
+    background-color: #fff;
+    color: #8184a1;
+}
+
+.people_label{
+    margin-right: 150px;
+    margin-bottom: 2em;
+}
+
+#calculate {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 2em;
+    border-radius: 10px;
+    border: none;
+    background-color: #565760;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+#calculate:hover{
+    color:#565760;
+    background-color: #d4dad4;
+}
+
+strong{
+    margin-left: 10px;
+    margin-right: 10px;
 }
